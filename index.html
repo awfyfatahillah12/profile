@@ -3,53 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awfy Fatahillah As Salafy | Link</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awfy Fatahillah As salafy | Links</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+ VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color1: 0xff1e,
+        color2: 0x955e1,
+        wingSpan: 40.00,
+        separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 6.00
+    })
+
+    setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+    }, 1000)
+    })
+    </script>
 </head>
 <body>
-    <video autoplay muted loop playsinline>
-        <source src="./img/videos.mv4" type="video/mp4; codecs=hvc1">
-        <source src="./img/videos.webm" type="video/webm; codecs=vp9">
-      </video>
+    <div id="vanta" ></div>
     <main>
     <header>
-        <img src="img/awfy.png" />
-        <h1>@awfyfatahillah</h1>
+        <img src="./img/awfy.png" />
+        <h1>@Awfyfatahillah</h1>
     </header>
     <ul>
         <li>
-            <a href="https://www.twitter.com/as_awfy">
+            <a href="https://www.twitter.com/as_awfy" />
             <img src="./img/homepage.png" alt="Homepage" width="20" />
-            Official website
-            </a>
+            Offical Website
         </li>
         <li>
-            <a href="https://www.twitter.com/as_awfy">
-            <img src="./img/twitter.png" alt="Twitter" width="20" />
-            Twitter
-            </a>
-        </li>
-        <li>
-            <a href="https://www.github.com/awfyfatahillah12">
+            <a href="https://www.github.com/awfyfatahillah12" />
             <img src="./img/github.png" alt="Github" width="20" />
             Github
-            </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/in/awfy-mailar-a1765923a/">
-            <img src="./img/linklde.png" alt="Linkedln" width="20" />
-            Linkedln
-        </a>
+            <a href="https://www.twitter.com/as_awfy" />
+            <img src="./img/twitter.png" alt="Twitter" width="20" />
+            Twitter
         </li>
         <li>
-            <a href="https://www.instagram.com/awfthlla_">
+            <a href="https://www.linkedin.com/in/awfy-mailar-a1765923a/" />
+            <img src="./img/linklde.png" alt="Linklde" width="20" />
+            Linklde
+        </li>
+        <li>
+            <a href="https://www.instagram.com/awfthlla_" />
             <img src="./img/instagram.png" alt="Instagram" width="20" />
             Instagram
-            </a>
         </li>
     </ul>
-    </main>
-
+</main>
 </body>
 </html>
