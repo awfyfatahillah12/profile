@@ -1,35 +1,42 @@
-h1 {
-    color: grey;
-}
-
 body, html {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans" , sans-serif;
+    font-family: 'Open Sans' sans-serif;
     color: #fff;
 }
 
-body{
-    background: url(./img/logo.png) no-repeat center center fixed;
-    background-size: cover;
+body {
+    background: url(./img/logo.png) repeat center center fixed;
+    background-size: cover ;
+    padding: 0.5em;
 }
 
-video{
+#vanta {
     z-index: 0;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100;
+    height: 100%;
+}
+
+video {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 main {
     position: relative;
+
 }
 
 header {
-    margin-top: 3em;
+    margin-top: 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -37,24 +44,24 @@ header {
 }
 
 header > img {
-    width: 6em ;
+    width: 6em;
     height: 6em;
     border-radius: 100%;
-    border: 1px solid #fff;
+    border: 1px solid #fff
     box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px ;
 }
 
 header > h1 {
     display: inline-block;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     border-radius: 1em;
-    background-color: rgba(235, 99, 99, 0.837);
+    background-color: #000a;
     color: #fff;
-    padding: 0.3em 0.6em;
-    border: 1px solid #fffa
-    backdrop-filter: blur(10px) saturate(160%) contras(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(160%) contras(180%);
+    padding: 0.2em 0.5em;
+    border: 1px solid #fff;
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
 }
 
 ul {
@@ -62,12 +69,13 @@ ul {
     list-style: none;
     margin: 0 auto;
     padding: 2em;
+    max-width: 480px;
 }
 
 ul > li {
     background-color: #fffa;
-    backdrop-filter: blur(10px) saturate(160%) contras(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(160%) contras(180%);
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
     border-radius: 10em;
     padding: 1em;
     margin: 1.4em 0;
@@ -86,3 +94,4 @@ a {
     color: black;
     text-decoration: none;
 }
+
